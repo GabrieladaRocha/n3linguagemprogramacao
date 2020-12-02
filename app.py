@@ -50,6 +50,3 @@ def findAll():
 
 if __name__ == '__main__':
     app.run()
-    use_debugger = True
-    app.run(use_debugger=use_debugger, debug=app.debug,
-            use_reloader=use_debugger, host='0.0.0.0')

@@ -6,7 +6,6 @@ controller = Livro()
 class Routes:
     def create(self, req):
         livro = req.get_json()
-        ifPresent = controller.findOne(livro['codigo'])
         if livro['nome'] == "":
             return json.dumps({"code": 400, "description": "o nome deve estar preenchido", }), 400
         elif len(livro['autor']) > 100:
